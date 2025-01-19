@@ -51,3 +51,34 @@ let obj={
     marks:90
 }
 console.log(obj)
+
+const student1={
+    name:"John",
+    age:20,
+    grade:8,
+    marks:100,
+}
+const student2={
+    name:"Rahul",
+    grade:7,
+    marks:90,
+    age:25
+}
+const student3={
+    name:"akash",
+    marks:85,
+    age:20,
+    grade:8
+}
+console.log(student1,student2,student3)
+
+let student = {
+    name: 'John',
+    age: 20,
+    marks: 90
+}
+console.log(student.name);
+console.log(student.age);
+console.log(student.marks);
+console.log(student);
+console.log(student['name']);
