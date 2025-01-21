@@ -48,20 +48,35 @@ console.log(isgradea||isgradeb);
 console.log(!isgradeb);
 
 
-let student1={
-    name:"John",
-    age:20,
-    address:"New York"   
-}
-let student2={
-    name:"Alice",
-    age:22,
-    address:"New York"
+// let student1={
+//     name:"John",
+//     age:20,
+//     address:"New York"   
+// }
+// let student2={
+//     name:"Alice",
+//     age:22,
+//     address:"New York"
 
-}
-let student3={
-    name:"John",
-    age:35,
-}
+// }
+// let student3={
+//     name:"John",
+//     age:35,
+// }
 
+let age=16;
+console.log(age>=18?"adult":"minor")
 
+let student=[35,67,36,27,89];
+console.log("length"in student);
+console.log(student instanceof Array);
+
+let str1="hi";str2="hello";
+console.log(str1+" "+str2);
+
+let y=1000n;z=100n;
+console.log(y+z);
+console.log(y-z);
+console.log(y*z);
+console.log(y/z);
+console.log(y%z);
