@@ -139,7 +139,8 @@ switch(role){
 //                 break;
 //                 default:
 //                     console.log("no one is a good student");
-function calculator(operator, num1, num2) {
+
+function calculator(num1,operator,num2) {
     let result;
     switch(operator) {
         case '+':
@@ -153,19 +154,21 @@ function calculator(operator, num1, num2) {
             break;
         case '/':
             result = num1 / num2;
-            break;
+            break;                          
         case'%':
             result = num1 % num2;
             break;
+        case'**':
+        result=num1 ** num2;
+        break;
         default:
             result = "Invalid operator";
     }
-
     return result;
 }
-let operator = '%';
-let num1 = 100;
-let num2 = 15;
-let calculationResult = calculator(operator, num1, num2);
+let operator = '/';
+let num1 = 45;
+let num2 = 9;
+let calculation= calculator( num1,operator,num2);
+console.log(`The result of ${num1} ${operator} ${num2} is ${calculation}`);
 
-console.log(`The result of ${num1} ${operator} ${num2} is ${calculationResult}`);
