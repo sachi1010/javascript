@@ -1,4 +1,4 @@
-// et i=0;
+// let i=0;
 // do{
 //     console.log(i);
 //     i++;
@@ -53,10 +53,36 @@
 // }
 // while(f<10);
 
-let sum=72;
-for(s=0;s<15;s++){
-    sum/=2;
-    if(s===10) continue;
-    if(s===7) break;
-    console.log(`sum:${sum}`);
-}
+// let sum=72;
+// for(s=0;s<15;s++){
+//     sum/=2;
+//     if(s===10) continue;
+//     console.log(`sum:${sum}`);
+// }
+
+// function helo(a,b){
+//     console.log(a*b);
+// }
+// helo(48,90);
+
+
+let a=123;
+let c=0
+ while(a>0)
+    {
+        b=a%10;
+        c=(c*10)+b;
+        a=Math.floor(a/10);
+    }
+console.log(c)
+
+
+// let i=123456789;
+// let j=0;
+// while(i>0);
+// {
+//     k=i%10;
+//     j=(j*10)+k;
+//     z=Math.floor(i/10);
+// }
+// console.log(j)
