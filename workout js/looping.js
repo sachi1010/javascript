@@ -66,23 +66,57 @@
 // helo(48,90);
 
 
-let a=123;
-let c=0
- while(a>0)
-    {
-        b=a%10;
-        c=(c*10)+b;
-        a=Math.floor(a/10);
-    }
-console.log(c)
+// let a=1234567;
+// let c=0
+//  while(a>0)
+//     {
+//         b=a%10;
+//         c=(c*10)+b;
+//         a=Math.floor(a/10);
+//     }
+// console.log(c)
 
 
-// let i=123456789;
+// let i=123;
 // let j=0;
 // while(i>0);
 // {
 //     k=i%10;
 //     j=(j*10)+k;
-//     z=Math.floor(i/10);
+//     i=Math.floor(i/10);
 // }
 // console.log(j)
+
+// let a=12;
+// let b=0;
+// while(a>0);
+// {
+//     c=a**a;
+//     a=Math.floor(a/10);
+// }
+// console.log(c)
+
+// let a=12;
+// do
+// {
+//     console.log(a);
+//     a**
+// }
+// while(a>0)
+
+const a=12;
+do{
+    k=a*a;
+    console.log(k);
+}while(a<0);
+{
+    let a=12;
+    let i=0;
+    while(a>0){
+        b=a%10;
+        a=Math.floor(a/10);
+        i=(i*10)+b;
+        }
+        total=i*i;
+        console.log(total);
+}
