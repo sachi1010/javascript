@@ -107,8 +107,16 @@
 const a=12;
 do{
     k=a*a;
-    console.log(k);
-}while(a<0);
+    // console.log(k);
+    f=0;
+    while(k>0){
+        h=k%10;
+        f=(f*10)+h;
+        k=Math.floor(k/10);
+        
+    }console.log(f)
+}
+while(a<0);
 {
     let a=12;
     let i=0;
@@ -120,3 +128,5 @@ do{
         total=i*i;
         console.log(total);
 }
+
+
