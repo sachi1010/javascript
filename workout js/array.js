@@ -49,11 +49,49 @@
 
 
 
-let array=[1,2,3,4,5,6,7,8,9];
-let sum=12;
-for(let i=0;i<array.length;i++){
-    sum+=array[i];
-    console.log(sum);
-}
-    console.log(sum);
+// let array=[1,2,3,4,5,6,7,8,9];
+// let sum=12;
+// for(let i=0;i<array.length;i++){
+//     sum+=array[i];
+//     console.log(sum);
+// }
+//     console.log(sum);
 
+
+
+
+
+// Define the game board
+const boardSize = 100;
+const board = Array(boardSize).fill(0);
+
+// Define snakes and ladders (example positions)
+const snakes = { 14: 2, 32: 7, 50: 17, 58: 51, 64: 18, 70: 61, 85: 25, 91: 80, 97: 75, 99: 78 };
+const ladders = { 3: 27, 8: 32, 21: 42, 28: 90, 36: 44, 51: 67, 71: 91, 80: 98 };
+
+// Function to simulate a dice roll
+function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
+}
+
+// Function to move a player
+function movePlayer(playerPosition) {
+    let diceRoll = rollDice();
+    let newPosition = playerPosition + diceRoll;
+
+    if (newPosition <= boardSize) {
+        newPosition = snakes[newPosition] || ladders[newPosition] || newPosition;
+    }
+    return newPosition <= boardSize ? newPosition : playerPosition;
+}
+
+// Example game simulation
+let playerPosition = 0;
+let turns = 0;
+
+while (playerPosition < boardSize) {
+    playerPosition = movePlayer(playerPosition);
+    turns++;
+    console.log(`Turn ${turns}: Player is now on square ${playerPosition}`);
+}
+console.log(`Game over! Player reached the end in ${turns} turns.`);
