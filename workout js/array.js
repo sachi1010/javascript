@@ -45,10 +45,7 @@
 // console.log(sortedarray.reverse());//sorted array in reverse order
 // //
 // arr.forEach((el,index)=>console.log(`index.${index}:`,el));//index and element of array
-// //
-
-
-
+// 
 // let array=[1,2,3,4,5,6,7,8,9];
 // let sum=12;
 // for(let i=0;i<array.length;i++){
@@ -58,40 +55,60 @@
 //     console.log(sum);
 
 
+// a=[10,20,30,40,50];
+// console.log(a.some(el=>el>30));
+// console.log(a.every(el=>el>20));
+
+// console.log(a.join(","));
+// console.log(a.toString());
+
+// let filled=a.fill(5,1,4);
+// console.log(filled);
+// let copiedArray=a.copyWithin(1,3)
+// console.log(copiedArray);
+
+// let array=[212,232,243,254,465,78,69,57,0]
+// for(let key of array.keys())
+//     console.log(key);
+// for(let value of array.values())
+//     console.log(value);
+// for (let [index, value] of array.entries()) 
+//     console.log(`Index ${index}:`, value);
 
 
 
-// Define the game board
-const boardSize = 100;
-const board = Array(boardSize).fill(0);
+// // Define the game board
+// const boardSize = 100;
+// const board = Array(boardSize).fill(0);
 
-// Define snakes and ladders (example positions)
-const snakes = { 14: 2, 32: 7, 50: 17, 58: 51, 64: 18, 70: 61, 85: 25, 91: 80, 97: 75, 99: 78 };
-const ladders = { 3: 27, 8: 32, 21: 42, 28: 90, 36: 44, 51: 67, 71: 91, 80: 98 };
+// // Define snakes and ladders (example positions)
+// const snakes = { 14: 2, 32: 7, 50: 17, 58: 51, 64: 18, 70: 61, 85: 25, 91: 80, 97: 75, 99: 78 };
+// const ladders = { 3: 27, 8: 32, 21: 42, 28: 90, 36: 44, 51: 67, 71: 91, 80: 98 };
 
-// Function to simulate a dice roll
-function rollDice() {
-    return Math.floor(Math.random() * 6) + 1;
-}
+// // Function to simulate a dice roll
+// function rollDice() {
+//     return Math.floor(Math.random() * 6) + 1;
+// }
 
-// Function to move a player
-function movePlayer(playerPosition) {
-    let diceRoll = rollDice();
-    let newPosition = playerPosition + diceRoll;
+// // Function to move a player
+// function movePlayer(playerPosition) {
+//     let diceRoll = rollDice();
+//     let newPosition = playerPosition + diceRoll;
 
-    if (newPosition <= boardSize) {
-        newPosition = snakes[newPosition] || ladders[newPosition] || newPosition;
-    }
-    return newPosition <= boardSize ? newPosition : playerPosition;
-}
+//     if (newPosition <= boardSize) {
+//         newPosition = snakes[newPosition] || ladders[newPosition] || newPosition;
+//     }
+//     return newPosition <= boardSize ? newPosition : playerPosition;
+// }
 
-// Example game simulation
-let playerPosition = 0;
-let turns = 0;
+// // Example game simulation
+// let playerPosition = 0;
+// let turns = 0;
 
-while (playerPosition < boardSize) {
-    playerPosition = movePlayer(playerPosition);
-    turns++;
-    console.log(`Turn ${turns}: Player is now on square ${playerPosition}`);
-}
-console.log(`Game over! Player reached the end in ${turns} turns.`);
+// while (playerPosition < boardSize) {
+//     playerPosition = movePlayer(playerPosition);
+//     turns++;
+//     console.log(`Turn ${turns}: Player is now on square ${playerPosition}`);
+// }
+// console.log(`Game over! Player reached the end in ${turns} turns.`);
+

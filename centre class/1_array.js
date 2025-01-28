@@ -75,7 +75,7 @@ console.log("Array.toString:", arr.toString()); // Converts array to string
 // 13. Filling and Copying
 let filled = arr.fill(5, 1, 3); // Fills with 5 from index 1 to 3
 console.log("Array.fill:", filled);
-let copiedArray = arr.copyWithin(1, 3, 4); // Copies element from index 3 to index 1
+let copiedArray = arr.copyWithin(1, 3); // Copies element from index 3 to index 1
 console.log("Array.copyWithin:", copiedArray);
 
 // 14. Creating Keys, Values, and Entries
