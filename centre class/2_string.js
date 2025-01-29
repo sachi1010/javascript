@@ -81,7 +81,7 @@ console.log("Unicode escape:", "\u0041\u0042\u0043"); // ABC
 // 16. Match and Search with Regular Expressions
 console.log("Match 'Java':", str.match(/Java/));
 console.log("Search 'World':", str.search("World"));
-console.log("Replace using RegExp (/o/g):", str.replace(/o/g, '0'));
+
 
 // 17. Iterating over Strings
 console.log("Using for...of:");
