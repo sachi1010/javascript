@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.boxes1 div{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    text-align: center;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.boxes1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+}
+.boxes2 div{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    text-align: center;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+.boxes2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+}
