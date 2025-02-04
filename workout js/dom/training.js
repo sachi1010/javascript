@@ -30,8 +30,10 @@ function addition(){
     const b=document.getElementById("num2").value;
     console.log(b);
    const result=document.getElementById("addition");
-   result.value="";
-   
-     
-   
+   result.value=Number.parseInt(a) + Number.parseInt(b);
+}
+function reset(){
+     document.getElementById("num1").value=" ";
+     document.getElementById("num2").value=" ";
+     document.getElementById("addition").value=" ";
 }
