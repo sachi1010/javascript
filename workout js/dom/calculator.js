@@ -1,11 +1,15 @@
 function show(value) {
-    let num = document.querySelector("#result");
+    let num = document.getElementById("result");
     num.value+=value;
 }
-function clear() {
-     document.querySelector("#result").value=" ";
+function clear1(){
+    document.getElementById("result").value=" ";
 }
-function submit(){
+function result(){
     let result = document.querySelector("#result");
-    result.value=Math(result.value);
+    result.value=eval(result.value);
+}
+function backspace(){
+     let num=document.getElementById("result");
+    num.value=num.value.slice(0,-1);
 }

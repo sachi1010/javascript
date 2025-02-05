@@ -7,35 +7,47 @@
 </head>
 <style>
     #calculator{
-        width: 350px;
-        height: 560px;
+        width: 400px;
+        height: 600px;
         border: 1px solid black;
-        background-color: antiquewhite; 
+        background-color:black;
+        border-radius: 10px; 
     }
     input{
         width: 70px;
-        height: 100px;
-        margin: 5px;
-        background-color: aqua;
+        height: 70px;
+        margin: 8px;
+        background-color: rgb(67, 134, 134);
         font-size: 2em;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px gray;
+        margin-left: 15px;
+        border: 1px solid whitesmoke;
     }
     #result{
-        width: 300px;
+        width: 380px;
         margin: 5px;
         font-size: 2em;
+        color: blue;
+        background-color: gray;
     }
     body{
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
+        background-color:bisque;
+    }
+    input:focus{
+        background-color: aquamarine;
+        color:blue;
     }
 </style>
 <body>
 
     <div id="calculator">
         <input type="text" id="result">
-        <br>
+        <br><hr>
         <input type="button" value="1" onclick="show('1')">
         <input type="button" value="2" onclick="show('2')">
         <input type="button" value="3" onclick="show('3')">
@@ -53,25 +65,15 @@
         <br>
         <input type="button" value="*" onclick="show('*')">
         <input type="button" value="/" onclick="show('/')">
-        <input type="button" value="C" onclick="clear()">
-        <input type="button" value="=" onclick="submit()">
+        <input type="button" value="AC" onclick="clear1()">
+        <input type="button" value="=" onclick="result()">
+        <br>
+        <input type="button" value="Del" onclick="backspace()">
+        <input type="button" value="%" onclick="show('%')">
+        <input type="button" value="&" onclick="show('&')">
+        <input type="button" value="^" onclick="show('^')">
     </div>
-
 
     <script src="calculator.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
