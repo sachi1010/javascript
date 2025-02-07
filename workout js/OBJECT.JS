@@ -19,7 +19,7 @@
 // console.log(merge);
 
 
-let obj={
-    name:"ARAVIND"
-}
-Object.freeze(obj);
+// let obj={
+//     name:"ARAVIND"
+// }
+// Object.freeze(obj);
