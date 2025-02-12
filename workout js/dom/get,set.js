@@ -7,12 +7,10 @@ let data={
      "email":document.querySelector("#mail").value,
  };
  console.log(data); 
+
+ let obj1=new person(data.username);
+console.log(obj1.username);
 }
-// let person={
-//     get data(){
-//         return this.username.toUpperCase()
-//     }
-// }
 
 class person{
     constructor(username){
@@ -23,7 +21,11 @@ class person{
     }
 
 }
-let obj2=person;
-obj2.value;
-let 
+
+function clear(){
+    document.querySelector("#name").value = '';
+    document.querySelector("#pass").value = '';
+    document.querySelector("#mail").value = '';
+    
+}
 
