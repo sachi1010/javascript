@@ -33,15 +33,16 @@ const afterpage=()=>{
             page.classList.toggle("darkblue");
 });
 
-div.addEventListener("mouseover",(event)=>{
+div.addEventListener("click",(event)=>{
     event.stopPropagation(); 
     div.style.backgroundColor="red";
     div.style.color="white";
     div.style.padding="20px";
     div.style.margin="20px";
-    div.style.border="1px solid black";
+    div.style.border="3px solid black";
     div.style.width="50%";
     div.style.transition="background-color 2s ease-out";
+    
 })
 
 h1.addEventListener("click",(event)=>{

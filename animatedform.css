@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    border: 1px solid black;
+    height: 450px;
+    width: 400px;
+    background-color: rgba(137, 43, 226, 0.796);
+}
+body{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.form-group1{
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 70px;
+    align-items: center;
+    margin-left: 50px;
+}
+.form-group1 input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-group2{
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 50px;
+}
+.form-group2 input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 21px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-group3{
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 50px;
+}
+.form-group3 input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+   margin-left: -35px;
+   border-radius: 10px;
+   padding: 20px;
+}
+.form-group3 label{
+    padding-right: 40px;
+}
+.form-group4{
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: center;*/
+    margin-left: 50px;
+} 
+.form-group5{
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#log{
+    border: 2px solid black;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: chocolate;
+    margin-left: 90px;
+}
+#sign{
+border: 2px solid black;
+height: 40px;
+width: 80px;
+margin-left: 40px;
+border-radius:10px ;
+background-color: chocolate;
+}
+form h1{
+    text-align:left;
+    margin-top: 30px;
+    color: crimson;
+    margin-left: 150px;
+}
+#signup{
+    position: absolute;
+    z-index: 1;
+}
+#login{
+    position: relative;
+    z-index: 0;
+}

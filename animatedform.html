@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animatedform.css">
+</head>
+<body>
+    <form id="login">
+        <h1>Login</h1>
+        <div class="form-group1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="enter your name">
+        </div>
+        <div class="form-group2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="enter your email">
+        </div>
+        <div class="form-group3">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required placeholder="enter your password"> 
+        </div>
+        <div class="form-group4">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <div class="form-group5">
+            <button type="login" id="log">login</button>
+            
+        </div>
+    </form>
+
+    
+
+    <form action="" id="signup">
+        <h1>Login</h1>
+        <div class="form-group1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="enter your name">
+        </div>
+        <div class="form-group2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="enter your email">
+        </div>
+        <div class="form-group3">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required placeholder="enter your password"> 
+        </div>
+        <div class="form-group4">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <div class="form-group5">
+            <button type="login" id="log" onclick="login()">login</button>
+            <button type="submit" id="sign" onclick="signup()">signup</button>
+        </div>
+
+    </form>
+    <script src="animatedform.js"></script>
+</body>
+</html>
