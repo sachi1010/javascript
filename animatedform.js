@@ -1,35 +1,12 @@
-// function login(){
-//     let username = document.getElementById('username').value;
-//     let password = document.getElementById('password').value;
-//     let email = document.getElementById('email').value;
-//         let data = {
-//             "username": username,
-//             "password": password,
-//             "email": email
+const signupbtn=document.getElementById('signUp');
+const loginbtn=document.getElementById('log-in');
+const container=document.getElementById('register-page');
 
-//         };
-//         console.log(data);
-// }
-// function signup(){
-//     const form=document.querySelector("#login");
-//     form.addEventListener("click",(event)=>{
-//         event.preventDefault();
-    
-       
+signupbtn.addEventListener('click',()=>{
+    container.classList.add('sign-up');
+}
+);
+loginbtn.addEventListener('click',()=>{
+    container.classList.remove('sign-up');
+}   );
 
-//     })
-// }
-
-
-
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
-
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
