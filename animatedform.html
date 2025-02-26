@@ -1,66 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="animatedform.css">
-    <title>login and signup page</title>
 </head>
 <body>
-    <div class="register" id="register-page">
+    <div class="register" id="register">
         <!-- signup -->
-        <div class="form-container sign-up">
-            <form action="#">
+        <div class="sign-up">
+            <form class="form-container  signup-container">
                 <h1>Create Account</h1>
                 <input type="text" placeholder="first name" >
                 <input type="text" placeholder="second name" >
                 <input type="email" placeholder="email" >
                 <input type="number" placeholder="age" >
                 <input type="password" placeholder="Password" >
-                <input type="password" placeholder="confirm password" >
+                <input type="password" placeholder="confirm passord" >
                 
                     
                     
                 <button type = "submit" >Sign Up</button>
             </form>
         </div>
-
-
 <!-- login -->
 
-        <div class="form-container login-container">
-            <form action="#">
-                <h1>login</h1>
-               
-            
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>log In</button>
-            </form>
-        </div>
+<div>
+    <form action="#" class="form-container  login-conatiner" >
+        <h1>log In </h1>
+        
+        
+        <input type="email" placeholder="Email" >
+        <input type="password" placeholder="Password" >
+        <a href="#">Forgot your password?</a>
+        <button>log In</button>
+    </form>
+</div>
 
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <button  id="log-in">log In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                   
-                    <button  id="signUp">Sign Up</button>
-                </div>
+
+<!-- overlay -->
+ <div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+               
+                <button  id="log-in">log In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+               
+                <button  id="signUp">Sign Up</button>
             </div>
         </div>
     </div>
-    
-   
+ </div>
 
-    <script src="animatedform.js">
 
-    </script> 
+    </div>
+
+    <script src="animatedform.js"></script>
 </body>
 </html>

@@ -1,12 +1,13 @@
-const signupbtn=document.getElementById('signUp');
-const loginbtn=document.getElementById('log-in');
-const container=document.getElementById('register-page');
 
-signupbtn.addEventListener('click',()=>{
-    container.classList.add('sign-up');
-}
-);
-loginbtn.addEventListener('click',()=>{
-    container.classList.remove('sign-up');
-}   );
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('log-in');
+const register = document.getElementById('register');
+
+signUpButton.addEventListener('click', () => {
+	register.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	register.classList.remove("right-panel-active");
+});
 
