@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login form</title>
     <link rel="stylesheet" href="animatedform.css">
 </head>
 <body>
@@ -12,29 +12,30 @@
         <div class="sign-up">
             <form class="form-container  signup-container">
                 <h1>Create Account</h1>
-                <input type="text" placeholder="first name" >
-                <input type="text" placeholder="second name" >
-                <input type="email" placeholder="email" >
-                <input type="number" placeholder="age" >
-                <input type="password" placeholder="Password" >
-                <input type="password" placeholder="confirm passord" >
+                <input type="text" placeholder="First name" required id="fname">
+                <input type="text" placeholder="Second name" required id="sname">
+                <input type="email" placeholder="Email"  required id="mail">
+                <input type="number" placeholder="Age" required id="age">
+                <input type="password" placeholder="Password" required id="password">
+                <input type="password" placeholder="Confirm password" required id="cpass">
                 
-                    
-                    
-                <button type = "submit" >Sign Up</button>
+        
+                <button type = "submit"  onclick="signup()">Sign Up</button>
             </form>
         </div>
 <!-- login -->
 
 <div>
-    <form action="#" class="form-container  login-conatiner" >
+    <form action="#" class="form-container  login-container" >
         <h1>log In </h1>
+        <div id="mouse"> 
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Password"  id="pass">
+        </div>
         
-        
-        <input type="email" placeholder="Email" >
-        <input type="password" placeholder="Password" >
+       
         <a href="#">Forgot your password?</a>
-        <button>log In</button>
+        <button onclick="validateform()" id="log">log In</button>
     </form>
 </div>
 

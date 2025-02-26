@@ -52,5 +52,18 @@ h1.addEventListener("click",(event)=>{
     myText==="main content"?(event.target.textContent="python"):(event.target.textContent="main content");
 })
 
+const nav=document.querySelector("header");
+nav.addEventListener("mouseover",(event)=>{
+  event.target.classList.add("navbar");
+})
+nav.addEventListener("mouseout",(event)=>{
+    event.target.classList.remove("navbar");
+})
 
-}  
+const form=document.querySelector("#inputForm");
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    console.log("form submitted");
+}  )
+
+}
