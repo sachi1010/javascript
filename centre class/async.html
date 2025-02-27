@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronized JavaScript Functions</title>
+    <script>
+        // Sample asynchronous function 1 (e.g., fetching data)
+        async function fetchData() {
+            console.log("Fetching data...");
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log("Data fetched");
+                    resolve("Fetched data");
+                }, 2000); // Simulating network delay
+            });
+        }
+
+        // Sample asynchronous function 2 (e.g., processing data)
+        async function processData(data) {
+            console.log("Processing data...");
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log(`Data processed: ${data}`);
+                    resolve("Processed data");
+                }, 1000); // Simulating processing delay
+            });
+        }
+
+        // Sample asynchronous function 3 (e.g., updating UI)
+        async function updateUI(processedData) {
+            console.log("Updating UI...");
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log(`UI updated with: ${processedData}`);
+                    resolve("UI updated");
+                }, 500); // Simulating UI update delay
+            });
+        }
+
+        // Main function to synchronize the above functions
+        async function synchronizeFunctions() {
+            try {
+                const data = await fetchData();
+                const processedData = await processData(data);
+                await updateUI(processedData);
+                console.log("All functions executed in order");
+            } catch (error) {
+                console.error("Error occurred:", error);
+            }
+        }
+
+        // Call the main function when the page loads
+        window.onload = function() {
+            synchronizeFunctions();
+        };
+    </script>
+</head>
+<body>
+    <h1>Synchronized JavaScript Functions Example</h1>
+    <p>Check the console for output.</p>
+</body>
+</html>

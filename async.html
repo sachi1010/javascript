@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>async</h1>
+        <input type="text" id="input">
+        <button id="btn"  onclick="synchronize()" >click me</button>
+    </div>
+    <script>
+
+            async function fetchdata(){
+            let datas = document.getElementById('input').value;
+            console.log("fetching data");
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log(datas);
+                    resolve("fetched data");
+                },1000);
+            });
+        }
+        async function processdata(data){
+            console.log("processing data");
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log(`processed data:${data}`);
+                    resolve("processed data");
+                },2000);
+            });
+        }
+        async function updateui(processeddata){
+            console.log("updating ui");
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log(`ui updated with:${processeddata}`);
+                    resolve("ui updated");
+                },1000);
+            });
+        }
+        async function synchronize(){
+            try{
+                const data = await fetchdata();
+                const processeddata = await processdata(data);
+                await updateui(processeddata);
+                console.log("all functions executed in order");
+            }catch(error){
+                console.error("error occured:",error);
+            }
+        }
+
+
+</script>
+</body>
+</html>

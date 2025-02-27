@@ -60,10 +60,11 @@ nav.addEventListener("mouseout",(event)=>{
     event.target.classList.remove("navbar");
 })
 
+
 const form=document.querySelector("#inputForm");
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     console.log("form submitted");
 }  )
-
 }
+
