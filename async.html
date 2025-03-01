@@ -10,6 +10,7 @@
         <h1>async</h1>
         <input type="text" id="input">
         <button id="btn"  onclick="synchronize()" >click me</button>
+        
     </div>
     <script>
 
@@ -23,7 +24,7 @@
                 },1000);
             });
         }
-        async function processdata(data){
+        async function processdata(data){     
             console.log("processing data");
             return new Promise((resolve)=>{
                 setTimeout(()=>{
@@ -51,7 +52,6 @@
                 console.error("error occured:",error);
             }
         }
-
 
 </script>
 </body>
