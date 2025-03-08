@@ -30,17 +30,16 @@
         return this.#salary;
       }
 
-
       setSalary(salary) {
         this.#salary = salary;
       }
 
       displayInfo() {
-        console.log(`employee name is ${this.#name} Age: ${this.#age} Salary: ${this.#salary}`);
+        console.log(`employee name is ${this.#name} \n Age is ${this.#age} \n Salary: ${this.#salary}`);
       }
   }
 
-  class Manager extends Employee {
+  class Manager extends Employeemanage {
     #department;
   
     constructor(name, age, salary, department) {
@@ -60,3 +59,8 @@
         console.log(`Department: ${this.#department}`);
       }
     }
+console.log("employee list :");
+const employee=new Employeemanage("babu", 40, 50000);
+employee.displayInfo();
+const manager = new Manager('John Doe', 30, 50000, 'HR');
+manager.displayInfo();

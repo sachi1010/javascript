@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 850px;
+            height: auto;
+            border: 1px solid black;
+            background-color: burlywood;
+            padding: 20px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            width: 600px;
+            background-color: rgba(250, 214, 167, 0.562);
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #submitButton{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: chocolate;
+            border-radius: 10px;
+        }
+        table{
+            /* display: flex; */
+            justify-content: center;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+        }
+        th{
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgba(250, 214, 167, 0.562);
+            border-radius: 10px;
+        }
+        tbody{
+            text-align: center;
+            
+        }
+    </style>
+    <div>
+        <h1>Employee Management System</h1>
+        <form action="" method="">
+            <p>
+                <label for="name">Name :</label>
+                <input type="text"  placeholder="Enter Employee Name" id="name">
+            </p>
+           
+            <p>
+                <label for="empid">EmployeeId :</label>
+                <input type="text"  placeholder="Enter Employee id" id="empid">
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="text"  placeholder="Enter Employee Phone Number" id="phone">
+            </p>
+            <p>
+                <label for="dept">Department:</label>
+                <input type="text"  placeholder="Enter Employee department" id="dept">
+            </p>
+           
+            
+            
+
+            <p onclick="addEmployee()" id="submitButton">submit</p>
+
+        </form>
+
+    </div>
+    <div class="details">
+        <h1>Employee Details</h1>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Employee id</th>
+                    <th>Employee Phone Number</th>
+                    <th>Employee department</th>
+                </tr>
+            </thead>
+            <tbody >
+                
+            </tbody>
+            
+
+
+        </table>
+    </div>
+    <script src="managementsystem.js"></script>
+</body>
+</html>
