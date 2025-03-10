@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-color:rgba(255, 255, 0, 0.306) !important;
+}
+body{
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Book{
+    display: flex;
+    justify-content: center;
+}
+#checkbox{
+    display: flex;
+   
+}
+#checkbox input{
+    height: 40px;
+    width: 30px;
+    
+}
+#checkbox label{
+    margin-left:10px;
+    margin-top: 8px;
+    color: yellow;
+}
+#inputs{
+    margin-left: 150px;
+   margin-top: 20px;
+}
+#inputs #box1{
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+    background-color: transparent;
+    color:white;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+#round{
+    margin-left: 20px;
+}
+#enjoy{
+    color:gold;
+}
+#booknow{
+    background-color:gold;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid gold;
+    font-size: 20px;
+   margin-left: 80px;
+   transform: 1s focus ease-in;
+}
+::placeholder{
+    color:white;
+}
+#booknow :focus{
+    transition: translateX(10px);
+}
+.btn{
+    background-color: gold !important;
+    border: 1px solid yellow !important;
+    color: black !important;
+}
+.row{
+    display: grid;
+    grid-gap: 10px;
+}
+.cardsection{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.taxi{
+    color: white;
+}
+.choosetaxi{
+    margin-top: 200px;
+}
+.taxi h4{
+color: orangered;
+letter-spacing: 2px;
+}
+h4 span{
+    color:yellow;
+    font-size: 35px;
+    font-weight: bold;
+}
+.taxi h1,h5{
+color: gold;
+}
+.taxi h6{
+    color: gold;
+}

@@ -123,6 +123,7 @@ car.prototype.stop=function(){
     console.log(`enigne is ${this.modal} stoped `)
 }
 
+
 const c1=new car("toyato","crista");
 c1.start();
 c1.stop();

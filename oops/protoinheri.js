@@ -12,7 +12,6 @@ Person.prototype.sayHello = function() {
 const person1 = new Person("John");
 
 person1.sayHello();  // Output: Hello, my name is John
-
 console.log(person1.__proto__ === Person.prototype);  // true
 
 
