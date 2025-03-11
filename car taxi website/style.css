@@ -57,13 +57,13 @@ body{
     border: 1px solid gold;
     font-size: 20px;
    margin-left: 80px;
-   transform: 1s focus ease-in;
+  
+background: linear-gradient(to right, rgb(0, 255, 51),gold);
 }
+
+
 ::placeholder{
     color:white;
-}
-#booknow :focus{
-    transition: translateX(10px);
 }
 .btn{
     background-color: gold !important;
@@ -85,24 +85,33 @@ body{
 }
 .taxi{
     color: white;
+   
 }
 .choosetaxi{
     margin-top: 200px;
 }
 .taxi h4{
-color: orangered;
 letter-spacing: 2px;
+background: linear-gradient(to right, rgb(255, 0, 0),rgb(205, 250, 6));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 h4 span{
     color:yellow;
     font-size: 35px;
     font-weight: bold;
 }
-.taxi h1,h5{
+.taxi h1{
 color: gold;
+background: linear-gradient(to right, rgb(255, 0, 0),rgb(83, 6, 250));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .taxi h6{
-    color: gold;
+     color: gold; 
+     background: linear-gradient(to right, rgb(255, 0, 0),rgb(83, 6, 250));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 
 #cabs
@@ -119,6 +128,7 @@ article{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    
 }
 article{
     height: 299px;
@@ -162,4 +172,65 @@ article img{
     box-shadow: 0px 4px 4px 4px gray;
     
   }
-    
+  .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  #cabs .card{
+    margin: 20px;
+  }
+  .btn-primary{
+    background: linear-gradient(to right, rgb(255, 0, 0),gold);
+
+  }
+  .btn:focus {
+    outline: none; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px 4px rgba(0, 123, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+footer{
+    background-color: rgba(119, 136, 153, 0.737);
+    text-align: center;
+    color:gold;
+    background-image: url(images/bg2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   
+}
+footer .row{
+    display:flex ;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.copy{
+    margin-top: 50px;
+}
+#Contact{
+    margin-top: 20px;
+}
+
+.navbar-nav a{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,blue,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-nav a:focus{
+    color: blue !important;
+}
+.navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+   color: rgb(255, 0, 0) !important;
+   font-size: 2em !important;
+}
