@@ -7,14 +7,15 @@
     background-color:rgba(255, 255, 0, 0.306) !important;
 }
 body{
-    background-image: url(images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color:rgba(255, 255, 0, 0.306) !important; ;
 }
 .Book{
     display: flex;
     justify-content: center;
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
 }
 #checkbox{
     display: flex;
@@ -80,6 +81,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 .taxi{
     color: white;
@@ -102,3 +104,62 @@ color: gold;
 .taxi h6{
     color: gold;
 }
+
+#cabs
+{
+    display: flex;
+    justify-content: center;
+}
+article{
+    display: flex;
+}
+.pakages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+article{
+    height: 299px;
+    width: 70%;
+    background-color: rgba(250, 235, 215, 0.448);
+    margin: 20px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 4px rgb(187, 11, 11),-3px -3px -4px gray;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 4px 4px 5px gray;
+}
+article img{
+    border-radius: 20px 20px 20px 20px;
+}
+  .pakages article:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  .pakages div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .ootty img{
+    margin-left: 30px;
+    
+  }
+  .munnar img{
+    margin-left: 150px;
+  }
+  article p{
+    padding-left: 30px;
+  }
+  .ootty{
+    box-shadow: 0px 4px 4px 4px gray;
+  }
+  .munnar{
+    box-shadow: 0px 4px 4px 4px gray;
+    
+  }
+    
