@@ -43,5 +43,55 @@ document.querySelector("#pay").addEventListener("click", function () {
     alert("Redirecting to the payment gateway...");
 
   
-    window.location.href = "https://www.paymentgateway.com";
+    window.location.href = "";
 });
+
+
+
+
+const rates = {
+  "One Way Trip": 10,
+  "Two Way Trip": 15,
+  "Hourly Trip": 20,
+  "Innovo": 100,
+  "Indica": 30,
+  "Normal Van": 40,
+  "Coach Van": 60,
+  "Coach Bus": 100,
+  "Volvo Bus": 150,
+  "A/C Van": 80
+};
+
+function calculateAmount() {
+  const tripType = document.getElementById('trip').value;
+  const vehicleType = document.getElementById('vehi').value;
+
+  
+  let totalAmount = 0;
+
+  
+  if (rates[tripType]) {
+    totalAmount += rates[tripType];
+  } else {
+    alert("Please choose a trip type.");
+    return;
+  }
+
+
+  if (rates[vehicleType]) {
+    totalAmount += rates[vehicleType];
+  } else {
+    alert("Please choose a vehicle.");
+    return;
+  }
+
+
+  alert("Total Amount: " + totalAmount + "IND");
+}
+
+
+document.querySelector("#booknow").addEventListener('click', function(event) {
+  event.preventDefault();
+  calculateAmount();
+});
+

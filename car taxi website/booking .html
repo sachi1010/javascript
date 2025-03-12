@@ -57,7 +57,14 @@
                <div>
                 <input type="text" placeholder="Enter pickup Location" id="pickup">
                </div>
-               
+               <div>
+                <select id="trip" name="trip">
+                  <option >Choose your Trip</option>
+                  <option >One Way Trip</option>
+                  <option >Two Way Trip</option>
+                  <option >Hourly Trip</option>
+                </select>
+               </div>
                <div>
                 <input type="text" placeholder="Enter drop location" id="drop">
                </div>
@@ -69,22 +76,29 @@
                </div>
               <div>
                 <select id="vehi" name="vehi">
-                  <option value="html">Innovo</option>
-                  <option value="css">Indica</option>
-                  <option value="javascript">Normal Van</option>
-                  <option value="python">Coach Van</option>
-                  <option value="python">Coach Bus</option>
-                  <option value="python">Volvo Bus</option>
-                  <option value="python">A/C Van</option>
+                  <option >Choose Vehicle</option>
+                  <option >Innovo</option>
+                  <option >Indica</option>
+                  <option >Normal Van</option>
+                  <option >Coach Van</option>
+                  <option >Coach Bus</option>
+                  <option >Volvo Bus</option>
+                  <option >A/C Van</option>
               </select>
       </div>
             </form>
             <div style="display: flex; "> 
               <button id="booknow">Book Now</button>
+             
               <button style="margin-left: 20px;" id="pay">Pay Now</button>
             </div>
             
         </div>
+    </section>
+
+    <section>
+    
+
     </section>
 
     <script src="booking.js"></script>
