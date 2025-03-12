@@ -10,6 +10,7 @@ section{
     background-image: url(images/taxibg.avif);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 450px;
 }
 form{
     display: grid;
@@ -26,6 +27,7 @@ input{
     border: 2px solid gold;
     background-color: transparent;
     color: white;
+    border-radius: 5px;
 }
 form div{
     margin: 10px;
@@ -63,4 +65,31 @@ background: linear-gradient(to right,red,gold);
 }
 #search button{
     background-color: yellow;
+}
+select {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    background-color:transparent ;
+    color: gold;
+    padding: 10px;
+    width: 400px;
+}
+
+.navbar-nav a{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,blue,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-nav a:focus{
+    color: blue !important;
+}
+.navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+   color: rgb(255, 0, 0) !important;
+   font-size: 2em !important;
 }

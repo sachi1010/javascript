@@ -49,30 +49,44 @@
             <h1>Booking your Taxi</h1>
             <form action="">
                 <div>
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter your name" id="name">
                 </div>
                <div>
-                <input type="text" placeholder="Enter your phone number">
+                <input type="text" placeholder="Enter your phone number" id="number">
                </div>
                <div>
-                <input type="text" placeholder="Enter pickup Location">
+                <input type="text" placeholder="Enter pickup Location" id="pickup">
+               </div>
+               
+               <div>
+                <input type="text" placeholder="Enter drop location" id="drop">
                </div>
                <div>
-                <input type="text" placeholder="Enter Mobile Number">
+                <input type="date" placeholder="Enter date of travel" id="date">
                </div>
                <div>
-                <input type="text" placeholder="Enter drop location">
+                <input type="time" placeholder="Enter time of travel" id="time">
                </div>
-               <div>
-                <input type="date" placeholder="Enter date of travel">
-               </div>
-               <div>
-                <input type="time" placeholder="Enter time of travel">
-               </div>
-              
+              <div>
+                <select id="vehi" name="vehi">
+                  <option value="html">Innovo</option>
+                  <option value="css">Indica</option>
+                  <option value="javascript">Normal Van</option>
+                  <option value="python">Coach Van</option>
+                  <option value="python">Coach Bus</option>
+                  <option value="python">Volvo Bus</option>
+                  <option value="python">A/C Van</option>
+              </select>
+      </div>
             </form>
-            <button>Book Now</button>
+            <div style="display: flex; "> 
+              <button id="booknow">Book Now</button>
+              <button style="margin-left: 20px;" id="pay">Pay Now</button>
+            </div>
+            
         </div>
     </section>
+
+    <script src="booking.js"></script>
 </body>
 </html>

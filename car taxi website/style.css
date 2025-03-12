@@ -16,6 +16,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: sticky;
+    height: 600px;
+}
+.Book div{
+margin-top: 50px;
 }
 #checkbox{
     display: flex;
@@ -41,7 +45,7 @@ body{
     font-size: 20px;
     background-color: transparent;
     color:white;
-    border: 1px solid yellow;
+    border: 2px solid yellow;
     border-radius: 10px;
 }
 #round{

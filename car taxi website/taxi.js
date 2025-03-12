@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  
 
 function gotopage(){
     window.location.href='booking .html';
