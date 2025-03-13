@@ -94,3 +94,26 @@ select {
    color: rgb(255, 0, 0) !important;
    font-size: 2em !important;
 }
+footer{
+    background-color: rgba(119, 136, 153, 0.737);
+    text-align: center;
+    color:gold;
+    background-image: url(images/bg2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   
+}
+footer .row{
+    display:flex ;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.copy{
+    margin-top: 50px;
+}
+#Contact{
+    margin-top: 20px;
+}
