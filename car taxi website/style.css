@@ -144,19 +144,11 @@ article img{
     margin: 20px;
   }
   .btn-primary{
-    background: linear-gradient(to right, rgb(255, 0, 0),gold);
+    background: linear-gradient(to right, rgb(234, 255, 0),gold);
+    border: 2px solid red !important;
 
   }
-  .btn:focus {
-    outline: none; 
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px 4px rgba(0, 123, 255, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  }
-
-  .btn {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  }
+ 
 footer{
     background-color: rgba(119, 136, 153, 0.737);
     text-align: center;
@@ -201,3 +193,16 @@ footer .row{
   color: red !important;
 }
 
+
+.animation {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.2s;
+
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}

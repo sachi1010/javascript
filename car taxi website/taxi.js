@@ -39,3 +39,24 @@ document.addEventListener("DOMContentLoaded", () => {
 function gotopage(){
     window.location.href='booking .html';
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.animation');
+  
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+         
+          if (entry.isIntersecting) {
+              entry.target.classList.add('scroll-animation');
+          } else {
+              entry.target.classList.remove('scroll-animation');
+          }
+      });
+  }, { threshold: 0.1 });
+
+  elements.forEach((element) => {
+      observer.observe(element);
+      
+  });
+});
